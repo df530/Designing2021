@@ -18,6 +18,7 @@ commenting and discussion by quotes.
 - [Installation](#installation)
 - [Usage](#usage)
     - [Build system](#build-system)
+- [Wiki](#wiki)
 - [Authors](#authors)
 
 <!--
@@ -59,6 +60,10 @@ of types in source python files.
 - `test` -- run tests.
 - `check-coverage` -- check coverage of source files by tests.
 -->
+
+# Wiki
+Documentation and other useful materials you can find in project
+[wiki](https://github.com/DF5HSE/Designing2021/wiki).
 
 # Project status
 Project is in development. The first step is creating a web-application,
