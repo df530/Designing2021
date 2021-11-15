@@ -18,7 +18,7 @@ commenting and discussion by quotes.
 - [Installation](#installation)
 - [Usage](#usage)
     - [Build system](#build-system)
-  - [Web application](#web-application)
+    - [Web application](#web-application)
 - [Wiki](#wiki)
 - [Authors](#authors)
 
