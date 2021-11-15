@@ -37,14 +37,6 @@ def check_coverage():
     # call_all(calls)
 
 
-def run_flake8():
-    calls = [
-        "python3 -m flake8 src --count --select=E9,F63,F7,F82 --show-source --statistics",
-        "python3 -m flake8 src --count --max-complexity=10 --max-line-length=120 --statistics",
-    ]
-    call_all(calls)
-
-
 def run_pylint():
     calls = [
         "python3 -m pylint src"
@@ -73,13 +65,10 @@ if __name__ == "__main__":
     #     run_tests()
     # elif command == "check-coverage":
     #     check_coverage()
-    elif command == "flake8":
-        run_flake8()
     elif command == "pylint":
         run_pylint()
     elif command == "all-checks":
         run_type_checking()
-        run_flake8()
         run_pylint()
     else:
         raise RuntimeError(f"Wrong command '{command}'")
