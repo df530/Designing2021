@@ -59,7 +59,7 @@ of types in source python files.
 ## Web application
 You can launch web application on your local host by command:
 
-`uvicorn src:palt_app --reload`
+`python3 -m uvicorn src:palt_app --reload`
 
 After that you can try out endpoints in your browser on
 http://127.0.0.1:8000/docs
