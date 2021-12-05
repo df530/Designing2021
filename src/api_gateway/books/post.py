@@ -7,11 +7,12 @@ connected with books. For example, post books meta before
 source publication (but maybe it would be better to PUT source, not POST)
 """
 from src.api_gateway.app import palt_app
+from src.books.view import BookProfile
+from src.books.adapters import post_book
 
 
-@NotImplementedError
 @palt_app.post("/new_book/")
-def new_book(book_profile, book_src):
+def new_book(book_profile: BookProfile, book_src):
     """
     Add new book to books' database.
 
@@ -19,4 +20,4 @@ def new_book(book_profile, book_src):
     :param book_src:
     :return:
     """
-    assert book_profile is not None and book_src is not None
+    post_book(book_profile, book_src)
