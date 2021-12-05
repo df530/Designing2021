@@ -13,5 +13,3 @@ class BookInfo:
         self.author = author
         self.publication_date = publication_date
         self.description = description
-
-

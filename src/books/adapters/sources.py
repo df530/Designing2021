@@ -4,7 +4,6 @@ Adapter to database with books' content
 from typing import Any
 
 
-@NotImplementedError
 def get_source(book_id: str) -> Any:
     """
     Get source of the book
@@ -12,10 +11,9 @@ def get_source(book_id: str) -> Any:
     :param book_id:
     :return: TODO type
     """
-    pass
+    raise NotImplementedError
 
 
-@NotImplementedError
 def post_source(book_id: str, source):
     """
     Post source of the book to the database
@@ -24,4 +22,4 @@ def post_source(book_id: str, source):
     :param source: TODO type
     :return:
     """
-    pass
+    raise NotImplementedError

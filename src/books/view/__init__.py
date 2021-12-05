@@ -2,7 +2,7 @@
 Classes for viewing information about books
 """
 
-from src.books.databases.models.info import BookInfo
+from src.books.databases.models import BookInfo
 
 
 class BookMeta:
@@ -19,8 +19,3 @@ class BookProfile:
         self.author = book_info.author
         self.publication_date = book_info.publication_date
         self.description = book_info.description
-
-
-class BookSource:
-    """Source of the book"""
-

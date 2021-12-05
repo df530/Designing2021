@@ -1,7 +1,6 @@
 """
 GET endpoints for getting different books' data
 """
-import datetime
 from typing import Any
 
 from src.api_gateway.app import palt_app
