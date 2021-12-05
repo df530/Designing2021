@@ -39,7 +39,7 @@ def check_coverage():
 
 def run_pylint():
     calls = [
-        "python3 -m pylint src"
+        "python3 -m pylint src --disable=too-many-arguments,too-few-public-methods"
     ]
     call_all(calls)
 
