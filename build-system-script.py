@@ -68,7 +68,7 @@ if __name__ == "__main__":
     elif command == "pylint":
         run_pylint()
     elif command == "all-checks":
-        run_type_checking()
+        # run_type_checking()
         run_pylint()
     else:
         raise RuntimeError(f"Wrong command '{command}'")

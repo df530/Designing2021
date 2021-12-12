@@ -1,0 +1,6 @@
+{
+  "title": "Sudba Cheloveka",
+  "author": "Mikhail Sholokhov",
+  "publication_date": "1956-12-31",
+  "description": "With the outbreak of the Great Patriotic War, the truck driver Andrey Sokolov has to leave for army and part with his family. In the first months of the war, he gets wounded and is captured by Nazis. In captivity, he experiences all the burdens of a concentration camp. Due to his courage he showed to camp's chief when he refuses to drink with him to victory of Nazi arms, he avoids his execution and, finally, runs from Nazis. In a short vacation in his hometown, Sokolov finds out that his beloved wife Irina and both of their daughters were killed during the bombing. He immediately returns to the front, unable to stay in his native town any more. The only relative Andrey still has is his son, who serves as an officer in the army. Right on Victory Day, Andrey receives news that his son was killed on the last day of the war. After the war, lonely Andrei Sokolov doesn't return to his town and works somewhere else. He meets a little boy Vanya, who was left an orphan. His mother died and his father missed in action. Sokolov tells the boy that he is his father, and this gives the boy (and himself) a hope for a new life."
+}

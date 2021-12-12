@@ -2,3 +2,9 @@ pylint
 mypy
 fastapi
 uvicorn
+pydantic
+sqlalchemy
+sqlalchemy[mypy]
+sqlalchemy-utils
+sqlalchemy-utils[mypy]
+python-multipart
