@@ -3,25 +3,16 @@ File with Fast API application
 """
 from fastapi import FastAPI
 
-from src.books.databases import BooksDatabase
-from src.books.databases import models
+from src.databases.adapters import PostgresqlAdapter, BaseAdapter
 
-POSTGRESQL_DATABASE_URL = None  # "postgresql://<user>:<password>@<host, 'localhost' for example>[:<port>]/books_db"
-if POSTGRESQL_DATABASE_URL is None:
-    raise ValueError("POSTGRESQL_DATABASE_URL is not defined")
-
-books_db = BooksDatabase(POSTGRESQL_DATABASE_URL)
-
-models.Base.metadata.create_all(bind=books_db.engine)
 palt_app = FastAPI()
 
 
 def get_db():
-    db = books_db.SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+    db: BaseAdapter = None  # PostgresqlAdapter(<hostname>, <port>, <username>, <password>, <database>)
+    if db is None:
+        raise ValueError("Database is not set")
+    yield db
 
 
 @palt_app.get("/")
