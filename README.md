@@ -56,6 +56,22 @@ of types in source python files.
 - `check-coverage` -- check coverage of source files by tests.
 -->
 
+## Databases
+Before launching web application you have to set up Postgresql. Guides for:
+- Windows https://www.postgresqltutorial.com/install-postgresql/
+- для Linux https://www.postgresqltutorial.com/install-postgresql-linux/
+- для Mac OS https://www.postgresqltutorial.com/install-postgresql-macos/
+
+After that you have to set `POSTGRESQL_DATABASE_URL` variable in file
+`src/api_gateway/app.py`. If database doesn't exist, it will be created
+after launching of web application.
+
+Also, you can load dump of databases, which you can find in `resources/database 
+backups` directory. Now there isn't special script for doing that, but in the
+future  it will be added. Loading dumps isn't important, because you can add
+data  by executing endpoints of web application. Books data you can find in
+`resources/books`.
+
 ## Web application
 You can launch web application on your local host by command:
 
@@ -63,6 +79,7 @@ You can launch web application on your local host by command:
 
 After that you can try out endpoints in your browser on
 http://127.0.0.1:8000/docs
+
 
 # Wiki
 Documentation and other useful materials you can find in project
